@@ -1,0 +1,494 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;500 & display=swap');
+@import url('https://coolors.co/ba2d0b-d5f2e3-73ba9b-003e1f-01110a');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Feliz+Mono & display=swap');
+
+/* Reset */
+*{
+    margin: 0%;
+    padding: 0%; 
+    box-sizing: border-box;
+}
+/* HTML-BODY */
+html{
+    background-color: aliceblue;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+     }
+
+
+/* Encabezado */
+
+header{
+    grid-area: header;
+    height: auto;
+}
+
+.IMGLOGO{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Links{
+    display: flex;
+    list-style-type: none;
+    font-family: fantasy;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.Home{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+}
+
+.Contactos{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: cyan;
+}
+
+.AMD{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+}
+.Nvidia{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: green;
+}
+.Perfil{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: aquamarine;
+}
+
+/* Cuerpo */
+
+main{
+    grid-area: main;
+}
+
+/* INDEX */
+.bodyINDEX{
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 0.01fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+
+    ;
+}
+
+.mainIndex{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "logrepgpu parrafoini parrafoini"
+    "imglogoamdnvidia imglogoamdnvidia imglogoamdnvidia"
+    ;
+}
+
+.ParrafoInicio{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: black;
+    grid-area: parrafoini;
+}
+
+.IMGLOGOAMDNVIDIA{
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-area: imglogoamdnvidia;
+}
+
+.LOGOREPARARGPU{
+    margin-right: 50px;
+    display: flex;
+    align-items:start;
+    justify-content:end;
+    grid-area: logrepgpu;
+}
+
+/* CONTACTOS */
+.bodyCONTACTOS{
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+
+.mainCONTACTOS{
+    display: grid;
+    grid-template-rows: 0.20fr 1fr ;
+    grid-template-columns: 0.50fr 1fr;
+    grid-template-areas:
+    "main parrafocontactos"
+    "iconocontact formulario"
+    ;
+    
+}
+
+.ParrafoContactos{
+    font-family: 'Happy Monkey', cursive;
+    color: black;
+    grid-area: ParrafoAMD;
+    font-size: 20px;
+    grid-area: parrafocontactos;
+    display: flex;
+}
+
+.Formulario{
+    display: flex;
+    font-size: 30px;
+    margin-top: 50px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    grid-area: formulario;
+    margin-left: 0%;
+}
+
+.IconoContactos{
+    grid-area: iconocontact;
+    margin-left: 100%;
+}
+
+#Usuario{
+    border-radius: 5%;
+}
+#Reseña{
+    border-radius: 5%;
+}
+#Email{
+    border-radius: 5%;
+}
+#Problema{
+    border-radius: 5%;
+}
+#Envio{
+    border-radius: 5%;
+}
+
+/* AMD */
+.bodyAMD{
+    background: rgb(255,107,58);
+    background: linear-gradient(rgba(255,107,58,1) 0%, rgba(255,255,255,1) 88%);
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 0.10fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+
+    ;
+}
+.mainAMD{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-columns: 0.5fr repeat(2, 1fr);
+    grid-template-areas:
+    "ParrafoAMD rx5 rx5"
+    "main rx67 rx67"
+    "main otros otros"
+    "main otros2 otros2"
+    ;
+}
+
+.ParrafoAMD{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    grid-area: ParrafoAMD;
+    font-size: 30px;
+}
+
+.RX5{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: rx5;
+}
+.RX67{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: rx67;
+}
+
+.OTRAS{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: otros;
+}
+.OTRAS2{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: otros2;
+}
+
+#SeriesRX500{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#SeriesRX5000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#SeriesRX6000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#SeriesRX7000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#W7900{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#AMDVII{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+
+#RX580{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+
+#W6600{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+
+
+/* NVIDIA */
+.bodyNVIDIA{
+    background: rgb(116,214,128);
+    background: linear-gradient( rgba(116,214,128,1) 0%, rgba(255,255,255,1) 93%);
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 0.10fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+
+    ;
+}
+
+.mainNVIDIA{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-columns: 0.5fr repeat(2, 1fr);
+    grid-template-areas:
+    "ParrafoNVIDIA rtx12 rtx12"
+    "main rtx34 rtx34"
+    "main otrasNvidia otrasNvidia"
+    "main otrasNvidia2 otrasNvidia2"
+    ;
+}
+
+.ParrafoNVIDIA{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    grid-area: ParrafoNVIDIA;
+    font-size: 30px;
+}
+
+.RTX12{
+    margin-top: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: rtx12;
+}
+
+.RTX34{
+    margin-top: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: rtx34;
+}
+
+.otrasNvidia{
+    margin-top: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: otrasNvidia;
+}
+
+.otrasNvidia2{
+    margin-top: 150px;
+    margin-bottom: 75px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    grid-area: otrasNvidia2;
+}
+
+#RTX1000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#RTX2000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#RTX3000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#RTX4000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#GTX660{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#GTX970{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+
+#RTXA4500{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+#RTX2080{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+
+
+/* Perfil */
+.bodyPERFIL{
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+
+.mainPERFIL{
+    display: grid;
+    grid-template-rows: 0.20fr 1fr ;
+    grid-template-columns: 0.50fr 1fr;
+    grid-template-areas:
+    "main parrafoperfil"
+    "logoperfil formularioperfil"
+    ;
+    
+}
+
+.FormularioPerfil{
+    font-size: 30px;
+    margin-top: 50px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    grid-area: formularioperfil;
+    margin-left: 0%;
+}
+
+.ParrafoPerfil{
+    grid-area: parrafoperfil;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 20px;
+    color: black;    
+}
+
+.LogoPerfil{
+    grid-area: logoperfil;
+}
+#LogoPERFIL{
+    margin-left: 100%;
+}
+#Nombre{
+    border-radius: 5%;
+}
+#Apellido{
+    border-radius: 5%;
+}
+#Contraseña{
+    border-radius: 5%;
+}
+#Email{
+    border-radius: 5%;
+}
+
+
+/* Pie de pagina */
+.Copyright{
+    font-family: serif;
+    display: inline;
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    font-size: 20px;
+    margin-top:auto;
+}
+
+.LogoWhatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
