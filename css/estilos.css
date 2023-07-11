@@ -19,7 +19,7 @@ html{
 }
 body{
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
      }
 
 
@@ -142,7 +142,11 @@ main{
     justify-content:end;
     grid-area: logrepgpu;
 }
-
+#LOGOREPARARGPU
+{
+    width: 250px;
+    height: 200px;
+}
 /* CONTACTOS */
 .bodyCONTACTOS{
     background-color: #ff7878;
@@ -459,7 +463,7 @@ main{
 #Nombre{
     border-radius: 5%;
 }
-#Apellido{
+#Usuario{
     border-radius: 5%;
 }
 #Contraseña{
@@ -492,3 +496,244 @@ footer{
     bottom: 30px;
     right: 20px;
 }
+
+/* MediaQuaries */
+
+@media (max-width: 1200px){
+    /* AMD */
+    #SeriesRX7000{
+        width: 425px;
+        height: 225px;
+    }
+    #W7900{
+        width: 425px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 1024px){
+     /* AMD */
+     .ParrafoAMD{
+        font-size: 20px;
+    }
+     #SeriesRX7000{
+        width: 375px;
+        height: 200px;
+    }
+    #W7900{
+        width: 375px;
+        height: 200px;
+    }
+    #RX580{
+        width: 350px;
+        height: 450px;
+    }
+    #SeriesRX5000{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width: 950px) and (min-width: 770px){
+    /* ENCABEZADO */
+    #IMGLOGO{
+        width: 350px;
+        height: 150px;
+    }
+
+     /* AMD */
+     #SeriesRX7000{
+        width: 300px;
+        height: 150px;
+    }
+    #W7900{
+        width: 300px;
+        height: 150px;
+    }
+    #RX580{
+        width: 300px;
+        height: 400px;
+    }
+    #SeriesRX5000{
+        width: 300px;
+        height: 275px;
+    }
+    #SeriesRX500{
+        width: 240px;
+        height: 175px;
+    }
+    #SeriesRX6000{
+        width: 300px;
+        height: 230px;
+    }
+    #AMDVII{
+        width: 300px;
+        height: 230px;
+    }
+    #W6600{
+        width: 300px;
+        height: 150px;
+    }
+}
+@media (max-width: 768px){
+     /* INDEX */
+     .ParrafoInicio{
+        font-size: 18px;
+    }
+    #LogoAMD{
+        width:275px;
+        height:135px;
+    }
+    #LogoNvidia{
+        width:200px;
+        height:170px;
+    }
+    #LOGOREPARARGPU{
+        width: 150px;
+        height: 130px;
+    }
+
+    /* AMD */
+    .bodyAMD{
+        display: grid;
+        grid-template-rows: 0.1fr 2fr 0.1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+    
+        ;
+    }
+    .RX5{
+        display: flex;
+        flex-direction: column;
+    }
+    .RX67{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .OTRAS{
+        display: flex;
+        flex-direction: column;
+    }
+    .OTRAS2{
+        display: flex;
+        flex-direction: column;
+    }
+    #SeriesRX7000{
+        width: 300px;
+        height: 150px;
+    }
+    #W7900{
+        width: 300px;
+        height: 150px
+    }
+    #RX580{
+        width: 300px;
+        height: 400px;
+    }
+    #SeriesRX5000{
+        width: 300px;
+        height: 275px;
+    }
+    #SeriesRX500{
+        width: 240px;
+        height: 175px;
+    }
+    #SeriesRX6000{
+        width: 300px;
+        height: 230px;
+    }
+    #AMDVII{
+        width: 300px;
+        height: 230px;
+    }
+    #W6600{
+        width: 300px;
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 600px){ 
+    /* ENCABEZADO */
+    #IMGLOGO{
+        width: 350px;
+        height: 150px;
+    }
+
+    /* AMD */
+    #SeriesRX7000{
+        width: 350px;
+        height: 200px
+    }
+    #W7900{
+        width: 350px;
+        height: 200px
+    }
+    #RX580{
+        width: 250px;
+        height: 275px;
+    }
+    #SeriesRX5000{
+        margin-top: 20px;
+        width: 275px;
+        height: 250px;
+    }
+
+    /* INDEX */
+    .ParrafoInicio{
+        font-size: 20px;
+    }
+    #LogoAMD{
+        width:275px;
+        height:135px;
+    }
+    #LogoNvidia{
+        width:200px;
+        height:170px;
+    }
+    #LOGOREPARARGPU{
+        width: 150px;
+        height: 130px;
+    }
+
+    /* FOOTER */
+    .LogoWhatsapp{
+        width:30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    /* ENCABEZADO */
+    #IMGLOGO{
+        width: 325px;
+        height: 135px;
+    }
+    /* INDEX */
+    .ParrafoInicio{
+    font-size: 15px;
+    }
+    #LogoAMD{
+        width:225px;
+        height:100px;
+    }
+    #LogoNvidia{
+        width:160px;
+        height:130px;
+    }
+    #LOGOREPARARGPU{
+        width: 150px;
+        height: 125px;
+    }
+    /* AMD */
+    .ParrafoAMD{
+        font-size: 15px;
+    }
+}
+
+
+
+
