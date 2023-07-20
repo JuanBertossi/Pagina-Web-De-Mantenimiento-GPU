@@ -28,11 +28,16 @@ body{
 header{
     grid-area: header;
     height: auto;
+    background-color: black;
 }
 
 .IMGLOGO{
     display: flex;
     justify-content: center;
+}
+.IMGLOGO2{
+   width: 475px;
+   height: 200px;
 }
 
 h1{
@@ -106,53 +111,56 @@ main{
     "header header"
     "main main"
     "footer footer"
-
     ;
 }
 
 .mainIndex{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-areas: 
-    "logrepgpu parrafoini parrafoini"
-    "imglogoamdnvidia imglogoamdnvidia imglogoamdnvidia"
+    "jib elijagpu"
     ;
 }
-
-.ParrafoInicio{
-    font-family: 'Poppins', sans-serif;
+.mainIndex h1{
+    display: flex;
+    background-color: black;
+    border-radius: 5px;
+    width: 500px;
+}
+.mainIndex p{
+    display: flex;
     font-size: 30px;
     color: black;
-    grid-area: parrafoini;
+    font-family: 'Poppins', sans-serif;
 }
 
-.IMGLOGOAMDNVIDIA{
+.IMGJIB{
+    display: flex;
+    justify-content: center;
+    grid-area: jib;
+}
+
+.ElijaGPU{
     margin-top: 20px;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    grid-area: imglogoamdnvidia;
+    grid-area: elijagpu;
+    flex-direction: column;
 }
 
-.LOGOREPARARGPU{
-    margin-right: 50px;
-    display: flex;
-    align-items:start;
-    justify-content:end;
-    grid-area: logrepgpu;
+.JIB{
+    border-radius: 5px;
+    height: 300px ;
+    width: 300px ;
 }
-#LOGOREPARARGPU
-{
-    width: 250px;
-    height: 200px;
-}
-/* CONTACTOS */
-.bodyCONTACTOS{
+
+
+/* PERFIL */
+.bodyPERFIL{
     background-color: #ff7878;
     background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
     display: grid;
-    grid-template-rows: 0.20fr 1fr 1fr;
+    grid-template-rows: 0.20fr 1fr 0.5fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "header header"
@@ -161,63 +169,69 @@ main{
     ;
 }
 
-.mainCONTACTOS{
+.mainPERFIL{
     display: grid;
     grid-template-rows: 0.20fr 1fr ;
     grid-template-columns: 0.50fr 1fr;
     grid-template-areas:
-    "main parrafocontactos"
-    "iconocontact formulario"
+    "main parrafoperfil"
+    "iconoperfil formulario"
     ;
     
 }
 
-.ParrafoContactos{
+.ParrafoPerfil{
+    margin-top: 10px;
     font-family: 'Happy Monkey', cursive;
-    color: black;
+    border-radius: 5px;
+    color: white;
     grid-area: ParrafoAMD;
-    font-size: 20px;
-    grid-area: parrafocontactos;
+    font-size: 30px;
+    grid-area: parrafoperfil;
     display: flex;
+    background-color: black;
+    width: 600px ;
 }
 
 .Formulario{
     display: flex;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 70px;
     color: black;
     font-family: 'Raleway', sans-serif;
     grid-area: formulario;
     margin-left: 0%;
 }
 
-.IconoContactos{
-    grid-area: iconocontact;
+.IconoPerfil{
+    grid-area: iconoperfil;
     margin-left: 100%;
+    margin-top: 20px;
+}
+.PerfilIcono{
+    width: 60px;
+    height: 60px;
 }
 
-#Usuario{
+.Usuario{
     border-radius: 5%;
 }
-#Reseña{
+.Email{
     border-radius: 5%;
 }
-#Email{
+.Problema{
     border-radius: 5%;
 }
-#Problema{
-    border-radius: 5%;
-}
-#Envio{
+.Envio{
     border-radius: 5%;
 }
 
-/* AMD */
-.bodyAMD{
-    background: rgb(255,107,58);
-    background: linear-gradient(rgba(255,107,58,1) 0%, rgba(255,255,255,1) 88%);
+/* GPUS */
+.bodyGPUS{
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
     display: grid;
-    grid-template-rows: 0.20fr 1fr 0.10fr;
+    grid-template-rows: 0.2fr 4fr 0.20fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "header header"
@@ -226,23 +240,43 @@ main{
 
     ;
 }
-.mainAMD{
+.mainGPUS{
     display: grid;
-    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-rows: repeat(8, 1fr) ;
     grid-template-columns: 0.5fr repeat(2, 1fr);
     grid-template-areas:
     "ParrafoAMD rx5 rx5"
     "main rx67 rx67"
     "main otros otros"
     "main otros2 otros2"
+    "main rtx12 rtx12"
+    "main rtx34 rtx34"
+    "main otrasNvidia otrasNvidia"
+    "main otrasNvidia2 otrasNvidia2"
+
     ;
 }
 
-.ParrafoAMD{
-    font-family: 'Raleway', sans-serif;
+.mainGPUS h1{
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: black;
+    border-radius: 5px;
+    height: 200px;
+}
+.mainGPUS p{
+    margin-top: 5px;
+    font-size: 16px;
     color: black;
+    background-color: azure;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/* AMD */
+.ParrafoGPUS{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
     grid-area: ParrafoAMD;
-    font-size: 30px;
 }
 
 .RX5{
@@ -274,77 +308,64 @@ main{
     justify-content: space-evenly;
     grid-area: otros2;
 }
-
-#SeriesRX500{
+/* GPUS AMD */
+.SeriesRX500{
     border: 2px solid rgb(170, 161, 161);
     background-color: white;
-}
-#SeriesRX5000{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#SeriesRX6000{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#SeriesRX7000{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#W7900{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#AMDVII{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
+    width: 275px;
+    height: 210px;
 }
 
-#RX580{
+.W6600{
     border: 2px solid rgb(170, 161, 161);
     background-color: white;
+    width: 400px;
+    height: 200px;
 }
 
-#W6600{
+.SeriesRX6000{
     border: 2px solid rgb(170, 161, 161);
     background-color: white;
+    width: 300px;
+    height: 300px;
 }
 
+.AMDVII{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
+
+.W7900{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.SeriesRX7000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.RX580{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 400px;
+    height: 500px;
+}
+
+.SeriesRX5000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 400px;
+    height: 400px;
+}
 
 /* NVIDIA */
-.bodyNVIDIA{
-    background: rgb(116,214,128);
-    background: linear-gradient( rgba(116,214,128,1) 0%, rgba(255,255,255,1) 93%);
-    display: grid;
-    grid-template-rows: 0.20fr 1fr 0.10fr;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"
-
-    ;
-}
-
-.mainNVIDIA{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) ;
-    grid-template-columns: 0.5fr repeat(2, 1fr);
-    grid-template-areas:
-    "ParrafoNVIDIA rtx12 rtx12"
-    "main rtx34 rtx34"
-    "main otrasNvidia otrasNvidia"
-    "main otrasNvidia2 otrasNvidia2"
-    ;
-}
-
-.ParrafoNVIDIA{
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    grid-area: ParrafoNVIDIA;
-    font-size: 30px;
-}
-
 .RTX12{
     margin-top: 50px;
     display: flex;
@@ -377,108 +398,196 @@ main{
     justify-content: space-evenly;
     grid-area: otrasNvidia2;
 }
+/* GPUS NVIDIA */
+.RTX1000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    
+}
+.RTX2000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 400px;
+    height: 300px;
+}
+.RTX3000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 450px;
+    height: 250px;
+}
+.RTX4000{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 500px;
+    height: 250px;
+}
+.GTX660{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 450px;
+    height: 275px;
+}
+.GTX970{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+    width: 420px;
+    height: 300px;
+}
 
-#RTX1000{
+.RTXA4500{
     border: 2px solid rgb(170, 161, 161);
     background-color: white;
+    width: 400px;
+    height: 300px;
 }
-#RTX2000{
+.RTX2080{
     border: 2px solid rgb(170, 161, 161);
     background-color: white;
-}
-#RTX3000{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#RTX4000{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#GTX660{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#GTX970{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
+    width: 400px;
+    height: 300px;
 }
 
-#RTXA4500{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-#RTX2080{
-    border: 2px solid rgb(170, 161, 161);
-    background-color: white;
-}
-
-
-/* Perfil */
-.bodyPERFIL{
+/* NOSOTROS */
+.bodyNOSOTROS{
     background-color: #ff7878;
     background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
     display: grid;
-    grid-template-rows: 0.20fr 1fr 1fr;
+    grid-template-rows: 0.20fr 1fr 0.01fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "header header"
     "main main"
     "footer footer"
+
+}
+.mainNOSOTROS{
+    display: grid;
+    grid-template-rows: 0.7fr repeat(4, 1fr);
+    grid-template-columns: 0.30fr 1fr;
+    grid-template-areas: 
+    "main nosotros"
+    "main empresa"
+    "main experiencia"
+    "main empleados"
+    "main proyectos"
     ;
 }
+.mainNOSOTROS h1{
+    background-color: black;
+    border-radius: 5px;
+}
+.mainNOSOTROS h2{
+    display: flex;
+    justify-content: start;
+    font-size: 30px;
+}
 
-.mainPERFIL{
-    display: grid;
-    grid-template-rows: 0.20fr 1fr ;
-    grid-template-columns: 0.50fr 1fr;
-    grid-template-areas:
-    "main parrafoperfil"
-    "logoperfil formularioperfil"
-    ;
+.mainNOSOTROS p{
+    display: flex;
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
     
 }
 
-.FormularioPerfil{
+.Nosotros{
+    margin-top: 20px;
+    grid-area: nosotros;
+    display: flex;
+}
+.Empresa{
+    grid-area: empresa;
+    margin-top: 10px;
+}
+.Experiencia{
+    grid-area: experiencia;
+    margin-top: 10px;
+}
+.Empleados{
+    grid-area: empleados;
+}
+.Proyectos{
+    grid-area: proyectos;
+}
+
+/* FAQ */
+.bodyFAQ{
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 0.01fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+}
+.mainFAQ{
+    display: grid;
+    grid-template-rows: repeat(5, 0.4fr) 1fr;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas:
+    "main Preguntas"
+    "main Tiempo"
+    "main Pagos"
+    "main Garantia"
+    "main Reembolso"
+    "main Reseña"
+    ;
+}
+
+.mainFAQ h1{
+    background-color: black;
+    border-radius: 5px;
+}
+
+.mainFAQ h2{
+    display: flex;
+    justify-content: start;
     font-size: 30px;
-    margin-top: 50px;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    grid-area: formularioperfil;
-    margin-left: 0%;
 }
 
-.ParrafoPerfil{
-    grid-area: parrafoperfil;
-    font-family: 'Happy Monkey', cursive;
+.mainFAQ p{
+    display: flex;
     font-size: 20px;
-    color: black;    
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
-
-.LogoPerfil{
-    grid-area: logoperfil;
+.PreguntasFrec{
+    display: flex;
+    grid-area: Preguntas;
+    margin-top: 20px;
 }
-#LogoPERFIL{
-    margin-left: 100%;
+.Tiempo{
+    grid-area: Tiempo;
 }
-#Nombre{
-    border-radius: 5%;
+.Pagos{
+    grid-area: Pagos;
 }
-#Usuario{
-    border-radius: 5%;
+.Garantia{
+    grid-area: Garantia;
 }
-#Contraseña{
-    border-radius: 5%;
+.Reembolso{
+    grid-area: Reembolso;
 }
-#Email{
-    border-radius: 5%;
+.Reseñas{
+    grid-area: Reseña;
 }
-
 
 /* Pie de pagina */
 .Copyright{
-    font-family: serif;
+    font-family: 'Poppins', sans-serif;
     display: inline;
     color: black;
+    font-size: 16px;
+}
+.CopyrightLogo{
+    width: 25px;
+    height: 15px;
 }
 
 footer{
@@ -495,114 +604,131 @@ footer{
     position: fixed;
     bottom: 30px;
     right: 20px;
+    width: 50px;
+    height: 45px;
 }
 
 /* MediaQuaries */
+@media (max-width: 1400px){
+    /* GPUS */
+    .mainGPUS h1{
+        height: 350px;
+    }
+    /* FAQ */
+    .mainFAQ h1{
+        height: 80px;
+    }
+}
 
 @media (max-width: 1200px){
-    /* AMD */
-    #SeriesRX7000{
+    /* PERFIL */
+    .mainPERFIL{
+    grid-template-columns: 0.32fr 1fr;
+    }
+    /* GPUS */
+    .mainGPUS h1{
+        height: 300px;
+    }
+    .SeriesRX7000{
         width: 425px;
         height: 225px;
     }
-    #W7900{
+    .W7900{
         width: 425px;
         height: 225px;
+    }
+    .RTX3000{
+        width: 400px;
+        height: 200px;
+    }
+    .RTX4000{
+        width: 400px;
+        height: 200px;
+    }
+    .GTX660{
+        width: 425px;
+        height: 250px;
+    }
+    .GTX970{
+        width: 400px;
+        height: 250px;
     }
 }
 
 @media (max-width: 1024px){
-     /* AMD */
-     .ParrafoAMD{
+    /* INDEX */
+    .mainIndex h1{
+        width: 400px;
+        font-size: 30px;
+    }
+    .mainIndex p{
         font-size: 20px;
     }
-     #SeriesRX7000{
+    /* PERFIL */
+    .Formulario{
+        font-size: 25px;
+    }
+     /* GPUS */
+    .SeriesRX7000{
         width: 375px;
         height: 200px;
     }
-    #W7900{
+    .W7900{
         width: 375px;
         height: 200px;
     }
-    #RX580{
+    .RX580{
         width: 350px;
         height: 450px;
     }
-    #SeriesRX5000{
+    .SeriesRX5000{
         width: 350px;
         height: 350px;
     }
-}
-@media (max-width: 950px) and (min-width: 770px){
-    /* ENCABEZADO */
-    #IMGLOGO{
-        width: 350px;
-        height: 150px;
+    .RTX3000{
+        width: 400px;
+        height: 200px;
     }
-
-     /* AMD */
-     #SeriesRX7000{
-        width: 300px;
-        height: 150px;
+    .RTX4000{
+        width: 400px;
+        height: 200px;
     }
-    #W7900{
-        width: 300px;
-        height: 150px;
+    .GTX660{
+        width: 425px;
+        height: 250px;
     }
-    #RX580{
-        width: 300px;
-        height: 400px;
-    }
-    #SeriesRX5000{
-        width: 300px;
-        height: 275px;
-    }
-    #SeriesRX500{
-        width: 240px;
-        height: 175px;
-    }
-    #SeriesRX6000{
-        width: 300px;
-        height: 230px;
-    }
-    #AMDVII{
-        width: 300px;
-        height: 230px;
-    }
-    #W6600{
-        width: 300px;
-        height: 150px;
+    .GTX970{
+        width: 400px;
+        height: 250px;
     }
 }
-@media (max-width: 768px){
-     /* INDEX */
-     .ParrafoInicio{
-        font-size: 18px;
+@media (max-width: 991px){
+    /* INDEX */
+    .JIB{
+        height: 200px ;
+        width: 200px ;
     }
-    #LogoAMD{
-        width:275px;
-        height:135px;
+    /* PERFIL */
+    .Formulario{
+        font-size: 20px;
     }
-    #LogoNvidia{
-        width:200px;
-        height:170px;
-    }
-    #LOGOREPARARGPU{
-        width: 150px;
-        height: 130px;
-    }
-
-    /* AMD */
-    .bodyAMD{
-        display: grid;
-        grid-template-rows: 0.1fr 2fr 0.1fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer"
-    
+     /* GPUS */
+    .mainGPUS{
+        grid-template-rows: repeat(8, 1fr) ;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-areas:
+        "ParrafoAMD rx5"
+        "main rx67"
+        "main otros"
+        "main otros2"
+        "main rtx12"
+        "main rtx34"
+        "main otrasNvidia"
+        "main otrasNvidia2"
         ;
+    }
+    .mainGPUS h1{
+        height: 200px;
     }
     .RX5{
         display: flex;
@@ -621,117 +747,176 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    #SeriesRX7000{
-        width: 300px;
-        height: 150px;
+    .RTX12{
+        display: flex;
+        flex-direction: column;
     }
-    #W7900{
-        width: 300px;
-        height: 150px
+    
+    .RTX34{
+        display: flex;
+        flex-direction: column;
     }
-    #RX580{
-        width: 300px;
-        height: 400px;
+    
+    .otrasNvidia{
+        display: flex;
+        flex-direction: column;
     }
-    #SeriesRX5000{
-        width: 300px;
-        height: 275px;
+    
+    .otrasNvidia2{
+        display: flex;
+        flex-direction: column;
     }
-    #SeriesRX500{
-        width: 240px;
-        height: 175px;
+    /* FAQ */
+    .mainFAQ{
+        grid-template-columns: 0.1fr 1fr;
     }
-    #SeriesRX6000{
-        width: 300px;
-        height: 230px;
+    .mainFAQ h1{
+        height: 80px;
     }
-    #AMDVII{
-        width: 300px;
-        height: 230px;
-    }
-    #W6600{
-        width: 300px;
-        height: 150px;
-    }
+}
 
+@media (max-width: 768px){
+    /* INDEX */
+    .JIB{
+        height: 200px ;
+        width: 200px ;
+    }
+    /* PERFIL */
+    .Formulario{
+        font-size: 20px;
+    }
+     /* GPUS */
+    .RX5{
+        display: flex;
+        flex-direction: column;
+    }
+    .RX67{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .OTRAS{
+        display: flex;
+        flex-direction: column;
+    }
+    .OTRAS2{
+        display: flex;
+        flex-direction: column;
+    }
+    .RTX12{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .RTX34{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .otrasNvidia{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .otrasNvidia2{
+        display: flex;
+        flex-direction: column;
+    }
+     /* NOSOTROS */
+    .mainNOSOTROS{
+        grid-template-columns: 0.1fr 1fr;
+    }
+    .mainNOSOTROS h1{
+        height: 80px;
+    }
+    /* FAQ */
+    .mainFAQ h2{
+        display: flex;
+        justify-content: start;
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 600px){ 
-    /* ENCABEZADO */
-    #IMGLOGO{
-        width: 350px;
-        height: 150px;
+    /* PERFIL */
+    .mainPERFIL{
+        grid-template-columns: 0.2fr 1fr;
+        }
+    .ParrafoPerfil{
+        background-color: black;
+        width: 400px ;
     }
-
-    /* AMD */
-    #SeriesRX7000{
-        width: 350px;
-        height: 200px
+    .Formulario{
+        font-size: 16px;
     }
-    #W7900{
-        width: 350px;
-        height: 200px
+    .PerfilIcono{
+        width: 50px;
+        height: 50px;
     }
-    #RX580{
-        width: 250px;
-        height: 275px;
+    /* GPUS */
+    .bodyGPUS{
+        grid-template-rows: 0.2fr 30fr 0.20fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
     }
-    #SeriesRX5000{
-        margin-top: 20px;
-        width: 275px;
-        height: 250px;
+    .mainGPUS{
+        grid-template-rows: 0.1fr repeat(8, 1fr) ;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "ParrafoAMD"
+        "rx5"
+        "rx67"
+        "otros"
+        "otros2"
+        "rtx12"
+        "rtx34"
+        "otrasNvidia"
+        "otrasNvidia2"
+        ;
     }
-
-    /* INDEX */
-    .ParrafoInicio{
-        font-size: 20px;
+    .mainGPUS h1{
+        height: 100px;
     }
-    #LogoAMD{
-        width:275px;
-        height:135px;
-    }
-    #LogoNvidia{
-        width:200px;
-        height:170px;
-    }
-    #LOGOREPARARGPU{
-        width: 150px;
-        height: 130px;
-    }
-
     /* FOOTER */
     .LogoWhatsapp{
         width:30px;
         height: 30px;
     }
+    /* NOSOTROS */
+    .mainNOSOTROS h1{
+        height: 60px;
+    }
+    /* FAQ */
+    .mainFAQ h2{
+        display: flex;
+        justify-content: start;
+        font-size: 20px;
+    }
 }
-
-@media (max-width: 480px){
-    /* ENCABEZADO */
-    #IMGLOGO{
-        width: 325px;
-        height: 135px;
-    }
+@media(max-width: 576px){
     /* INDEX */
-    .ParrafoInicio{
-    font-size: 15px;
+    .JIB{
+        height: 150px ;
+        width: 150px ;
     }
-    #LogoAMD{
-        width:225px;
-        height:100px;
+    .mainIndex h1{
+        width: 300px;
     }
-    #LogoNvidia{
-        width:160px;
-        height:130px;
+    /* PERFIL */
+    .mainPERFIL{
+        grid-template-columns: 0.1fr 1fr;
+        }
+    /* NOSOTROS */
+    .mainNOSOTROS p{
+        font-size: 16px;
     }
-    #LOGOREPARARGPU{
-        width: 150px;
-        height: 125px;
-    }
-    /* AMD */
-    .ParrafoAMD{
-        font-size: 15px;
-    }
+}
+@media (max-width: 480px){
+
 }
 
 
