@@ -1,0 +1,61 @@
+.bodyNOSOTROS{
+    background-color: $colorfondo;
+    background-image: $imagenfondo;
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 0.01fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: $gridareabody;
+
+    .mainNOSOTROS{
+        display: grid;
+        grid-template-rows: 0.7fr repeat(4, 1fr);
+        grid-template-columns: 0.30fr 1fr;
+        grid-template-areas: 
+        "main nosotros"
+        "main empresa"
+        "main experiencia"
+        "main empleados"
+        "main proyectos"
+        ;
+
+        h2{
+            display: flex;
+            justify-content: start;
+            font-size: 30px;
+        }
+
+        p{
+            display: flex;
+            font-size: 20px;
+            color: black;
+            font-family: $fuenteP;
+            
+        }
+
+        .Nosotros{
+            margin-top: 20px;
+            grid-area: nosotros;
+            display: flex;
+            
+            h1{
+                background-color: black;
+                border-radius: 5px;
+            }
+        }
+        .Empresa{
+            grid-area: empresa;
+            margin-top: 10px;
+        }
+        .Experiencia{
+            grid-area: experiencia;
+            margin-top: 10px;
+        }
+        .Empleados{
+            grid-area: empleados;
+        }
+        .Proyectos{
+            grid-area: proyectos;
+        }
+    }
+}
+

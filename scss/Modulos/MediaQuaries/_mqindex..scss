@@ -1,0 +1,36 @@
+@media (max-width: 1024px){
+    .bodyINDEX .mainIndex .ElijaGPU h1{
+        width: 400px;
+        font-size: 30px;
+    }
+    .bodyINDEX .mainIndex .ElijaGPU p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 991px){
+    .bodyINDEX .mainIndex .IMGJIB .JIB {
+        height: 200px ;
+        width: 200px ;
+    }
+}
+@media (max-width: 768px){
+    .bodyINDEX .mainIndex .IMGJIB .JIB {
+        height: 200px ;
+        width: 175px ;
+    }
+}    
+@media(max-width: 576px){
+    .bodyINDEX .mainIndex .IMGJIB .JIB {
+        height: 150px ;
+        width: 150px ;
+    }
+    .bodyINDEX .mainIndex .ElijaGPU h1{
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px){
+    .bodyINDEX .mainIndex .ElijaGPU h1{
+        width: 300px;
+    }
+}

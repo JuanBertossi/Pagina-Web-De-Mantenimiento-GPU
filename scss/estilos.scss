@@ -1,0 +1,36 @@
+/* Importaciones */
+@import "./Modulos/ResetImportTamaño/importacionfuente";
+@import "./Modulos/ResetImportTamaño/reset";
+//Variables
+@import "./Modulos/variables";
+/* Tamaño y color BODY, HTML */
+@import "./Modulos/ResetImportTamaño/tamaño";
+/* Header GLOBAL */
+@import "./Modulos/MainHeaderFooterGlobal/header";
+/* Main GLOBAL */
+@import "./Modulos/MainHeaderFooterGlobal/main";
+/* INDEX */
+@import "./Modulos/Pages/index";
+/* PERFIL */
+@import "./Modulos/Pages/perfil";
+/* GPUS */
+@import "./Modulos/Pages/gpus";
+/* NOSOTROS */
+@import "./Modulos/Pages/nosotros";
+/* FAQ */
+@import "./Modulos/Pages/faq";
+/* Footer GLOBAL */
+@import "./Modulos/MainHeaderFooterGlobal/footer";
+//Media Quaries
+/* MQ Index */
+@import "./Modulos/MediaQuaries/mqindex.";
+/* MQ Perfil */
+@import "./Modulos/MediaQuaries/mqperfil";
+/* MQ Gpus */
+@import "./Modulos/MediaQuaries/mqgpus";
+/* MQ Nosotros */
+@import "./Modulos/MediaQuaries/mqnosotros";
+/* MQ FAQ */
+@import "./Modulos/MediaQuaries/mqfaq";
+/* MQ Footer */
+@import "./Modulos/MediaQuaries/mqfooter";

@@ -1,0 +1,15 @@
+main{
+    grid-area: main;
+
+    h1{
+        font-family: $fuenteP;
+        text-align: center;
+        color: aliceblue;
+    }
+    h2{
+        font-family: $fuenteP;
+        font-size: smaller;
+        text-align: center;
+        color: aliceblue;
+    }
+}

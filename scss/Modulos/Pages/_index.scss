@@ -1,0 +1,54 @@
+.bodyINDEX{
+    background-color: $colorfondo;
+    background-image: $imagenfondo;
+    display: grid;
+    grid-template-rows: 0.20fr 1fr 0.01fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: $gridareabody;
+
+    .mainIndex{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-areas: 
+        "jib elijagpu"
+        ;
+
+        .IMGJIB{
+            display: flex;
+            justify-content: center;
+            grid-area: jib;
+
+            .JIB{
+                border-radius: 5px;
+                height: 300px ;
+                width: 300px ;
+            }
+        }
+        
+        .ElijaGPU{
+            margin-top: 20px;
+            display: flex;
+            grid-area: elijagpu;
+            flex-direction: column;
+
+            h1{
+                display: flex;
+                background-color: black;
+                border-radius: 5px;
+                width: 500px;
+            }
+            p{
+                display: flex;
+                font-size: 30px;
+                color: black;
+                font-family: $fuenteP;
+            }
+        }
+        }
+}
+
+
+
+
+

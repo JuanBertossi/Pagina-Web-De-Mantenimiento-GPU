@@ -1,0 +1,25 @@
+$fuenteP:'Poppins', sans-serif;
+$fuenteR:'Raleway', sans-serif;
+$fuenteH:'Happy Monkey', cursive;
+//BODY
+$imagenfondo:linear-gradient(315deg, #ff7878 0%, #74d680 74%);
+$colorfondo:#ff7878;
+$gridareabody:  "header header"
+                "main main"
+                "footer footer";
+//GPUS
+@mixin marginT-displayF-alignC-justSE{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+@mixin Border-Background{
+    border: 2px solid rgb(170, 161, 161);
+    background-color: white;
+}
+//MQGPUS
+@mixin MQGPU-DisF-flexdirectionC{
+    display: flex;
+    flex-direction: column;
+}
