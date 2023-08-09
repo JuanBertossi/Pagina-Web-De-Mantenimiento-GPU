@@ -1,162 +1,267 @@
-@media (max-width: 1400px){
-    .bodyGPUS .mainGPUS .ParrafoGPUS{
+@media (max-width: 1400px) {
+    .bodyGPUS .mainGPUS .ParrafoGPUS {
         height: 350px;
     }
-    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000{
+
+    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
         width: 450px;
         height: 250px;
     }
 }
 
-@media (max-width: 1200px){
-    .bodyGPUS .mainGPUS .ParrafoGPUS{
+@media (max-width: 1200px) {
+    .bodyGPUS .mainGPUS .ParrafoGPUS {
         height: 300px;
     }
-    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000{
+
+    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
         width: 400px;
         height: 200px;
     }
-    .bodyGPUS .mainGPUS .OTRAS .W7900{
+
+    .bodyGPUS .mainGPUS .OTRAS .W7900 {
         width: 425px;
         height: 225px;
     }
-    .bodyGPUS .mainGPUS .RTX34 .RTX3000{
+
+    .bodyGPUS .mainGPUS .RTX34 .RTX3000 {
         width: 400px;
         height: 200px;
     }
+
     .bodyGPUS .mainGPUS .RTX34 .RTX4000 {
         width: 400px;
         height: 200px;
     }
-    .bodyGPUS .mainGPUS .otrasNvidia .GTX660{
+
+    .bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
         width: 425px;
         height: 250px;
     }
-    .bodyGPUS .mainGPUS .otrasNvidia .GTX970{
+
+    .bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
         width: 400px;
         height: 250px;
     }
 }
 
-@media (max-width: 1024px){
-    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000{
+@media (max-width: 1024px) {
+    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
         width: 375px;
         height: 200px;
     }
-    .bodyGPUS .mainGPUS .OTRAS .W7900{
+
+    .bodyGPUS .mainGPUS .OTRAS .W7900 {
         width: 375px;
         height: 200px;
     }
-    .bodyGPUS .mainGPUS .OTRAS2 .RX580{
+
+    .bodyGPUS .mainGPUS .OTRAS2 .RX580 {
         width: 350px;
         height: 450px;
     }
-    .bodyGPUS .mainGPUS .OTRAS2 .SeriesRX5000{
+
+    .bodyGPUS .mainGPUS .OTRAS2 .SeriesRX5000 {
         width: 350px;
         height: 350px;
     }
-    .bodyGPUS .mainGPUS .RTX12 .RTX2000{
+
+    .bodyGPUS .mainGPUS .RTX12 .RTX2000 {
         width: 375px;
         height: 300px;
     }
-    .bodyGPUS .mainGPUS .otrasNvidia2 .RTX2080{
+
+    .bodyGPUS .mainGPUS .otrasNvidia2 .RTX2080 {
         width: 375px;
         height: 300px;
     }
-    .bodyGPUS .mainGPUS .RTX34 .RTX3000{
+
+    .bodyGPUS .mainGPUS .RTX34 .RTX3000 {
         width: 400px;
         height: 200px;
     }
+
     .bodyGPUS .mainGPUS .RTX34 .RTX4000 {
         width: 375px;
         height: 200px;
     }
-    .bodyGPUS .mainGPUS .otrasNvidia .GTX660{
+
+    .bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
         width: 425px;
         height: 250px;
     }
-    .bodyGPUS .mainGPUS .otrasNvidia .GTX970{
+
+    .bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
         width: 350px;
         height: 225px;
     }
 }
 
-@media (max-width: 991px){
-    .bodyGPUS .mainGPUS{
-        grid-template-rows: repeat(8, 1fr) ;
+@media (max-width: 991px) {
+    .bodyGPUS .mainGPUS {
+        grid-template-rows: repeat(8, 1fr);
         grid-template-columns: 0.5fr 1fr;
         grid-template-areas:
-        "ParrafoAMD rx5"
-        "main rx67"
-        "main otros"
-        "main otros2"
-        "main rtx12"
-        "main rtx34"
-        "main otrasNvidia"
-        "main otrasNvidia2"
+            "ParrafoAMD rx5"
+            "main rx67"
+            "main otros"
+            "main otros2"
+            "main rtx12"
+            "main rtx34"
+            "main otrasNvidia"
+            "main otrasNvidia2"
         ;
     }
-    .bodyGPUS .mainGPUS .ParrafoGPUS{
+
+    .bodyGPUS .mainGPUS .ParrafoGPUS {
         height: 200px;
     }
-    .bodyGPUS .mainGPUS .RX5{
+
+    .bodyGPUS .mainGPUS .RX5 {
         @include MQGPU-DisF-flexdirectionC;
     }
-    .bodyGPUS .mainGPUS .RX67{
+
+    .bodyGPUS .mainGPUS .RX67 {
         @include MQGPU-DisF-flexdirectionC;
     }
-    .bodyGPUS .mainGPUS .OTRAS{
+
+    .bodyGPUS .mainGPUS .OTRAS {
         @include MQGPU-DisF-flexdirectionC;
     }
-    .bodyGPUS .mainGPUS .OTRAS2{
+
+    .bodyGPUS .mainGPUS .OTRAS2 {
         @include MQGPU-DisF-flexdirectionC;
     }
-    .bodyGPUS .mainGPUS .RTX12{
+
+    .bodyGPUS .mainGPUS .RTX12 {
         @include MQGPU-DisF-flexdirectionC;
     }
-    
-    .bodyGPUS .mainGPUS .RTX34{
+
+    .bodyGPUS .mainGPUS .RTX34 {
         @include MQGPU-DisF-flexdirectionC;
     }
-    .bodyGPUS .mainGPUS .otrasNvidia{
+
+    .bodyGPUS .mainGPUS .otrasNvidia {
         @include MQGPU-DisF-flexdirectionC;
     }
-    
-    .bodyGPUS .mainGPUS .otrasNvidia2{
+
+    .bodyGPUS .mainGPUS .otrasNvidia2 {
         @include MQGPU-DisF-flexdirectionC;
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     .bodyGPUS .mainGPUS .ParrafoGPUS {
         height: 300px;
     }
 }
-@media (max-width: 600px){ 
-    .bodyGPUS{
+
+@media (max-width: 600px) {
+    .bodyGPUS {
         grid-template-rows: 0.2fr 30fr 0.20fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
         ;
     }
-    .bodyGPUS .mainGPUS{
-        grid-template-rows: 0.1fr repeat(8, 1fr) ;
+
+    .bodyGPUS .mainGPUS {
+        grid-template-rows: 0.1fr repeat(8, 1fr);
         grid-template-columns: 1fr;
         grid-template-areas:
-        "ParrafoAMD"
-        "rx5"
-        "rx67"
-        "otros"
-        "otros2"
-        "rtx12"
-        "rtx34"
-        "otrasNvidia"
-        "otrasNvidia2"
+            "ParrafoAMD"
+            "rx5"
+            "rx67"
+            "otros"
+            "otros2"
+            "rtx12"
+            "rtx34"
+            "otrasNvidia"
+            "otrasNvidia2"
         ;
     }
-    .bodyGPUS .mainGPUS .ParrafoGPUS{
+
+    .bodyGPUS .mainGPUS .ParrafoGPUS {
         height: 100px;
+    }
+}
+
+
+@media (min-width:360px) and (max-width:426px) {
+    .bodyGPUS .mainGPUS .ParrafoGPUS {
+        margin-left: 20px;
+        width: 320px;
+        height: 120px;
+    }
+
+    .bodyGPUS .mainGPUS p {
+        width: 250px;
+    }
+
+    .bodyGPUS .mainGPUS .RX5 .W6600 {
+        width: 300px;
+        height: 150px;
+    }
+
+    .bodyGPUS .mainGPUS .OTRAS .W7900 {
+        width: 300px;
+        height: 170px;
+    }
+
+    .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
+        width: 300px;
+        height: 170px;
+    }
+
+    .bodyGPUS .mainGPUS .OTRAS2 .RX580 {
+        width: 300px;
+        height: 370px;
+    }
+
+    .bodyGPUS .mainGPUS .OTRAS2 .SeriesRX5000 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bodyGPUS .mainGPUS .RTX12 .RTX1000 {
+        width: 300px;
+        height: 150px;
+    }
+
+    .bodyGPUS .mainGPUS .RTX12 .RTX2000 {
+        width: 300px;
+        height: 225px;
+    }
+
+    .bodyGPUS .mainGPUS .RTX34 .RTX3000 {
+        width: 300px;
+        height: 175px;
+    }
+
+    .bodyGPUS .mainGPUS .RTX34 .RTX4000 {
+        width: 320px;
+        height: 200px;
+    }
+
+    .bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
+        width: 300px;
+        height: 250px;
+    }
+
+    .bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
+        width: 300px;
+        height: 250px;
+    }
+
+    .bodyGPUS .mainGPUS .otrasNvidia2 .RTXA4500 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bodyGPUS .mainGPUS .otrasNvidia2 .RTX2080 {
+        width: 300px;
+        height: 250px;
     }
 }

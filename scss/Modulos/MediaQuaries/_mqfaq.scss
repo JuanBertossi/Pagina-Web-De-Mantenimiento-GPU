@@ -1,26 +1,30 @@
-@media (max-width: 1400px){
-    .bodyFAQ .mainFAQ .PreguntasFrec h1{
+@media (max-width: 1400px) {
+    .bodyFAQ .mainFAQ .PreguntasFrec h1 {
         height: 80px;
     }
 }
-@media (max-width: 991px){
-    .bodyFAQ .mainFAQ{
+
+@media (max-width: 991px) {
+    .bodyFAQ .mainFAQ {
         grid-template-columns: 0.1fr 1fr;
     }
-    .bodyFAQ .mainFAQ .PreguntasFrec h1{
+
+    .bodyFAQ .mainFAQ .PreguntasFrec h1 {
         height: 80px;
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     .bodyFAQ .mainFAQ h2 {
         display: flex;
         justify-content: start;
         font-size: 25px;
     }
 }
-@media (max-width: 600px){ 
+
+@media (max-width: 600px) {
     .bodyFAQ .mainFAQ h2 {
         justify-content: start;
         font-size: 20px;
-    }    
+    }
 }

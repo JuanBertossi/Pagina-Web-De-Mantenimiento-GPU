@@ -1,4 +1,4 @@
-.bodyFAQ{
+.bodyFAQ {
     background-color: $colorfondo;
     background-image: $imagenfondo;
     display: grid;
@@ -6,20 +6,20 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: $gridareabody;
 
-    .mainFAQ{
+    .mainFAQ {
         display: grid;
         grid-template-rows: repeat(5, 0.4fr) 1fr;
         grid-template-columns: 0.3fr 1fr;
         grid-template-areas:
-        "main Preguntas"
-        "main Tiempo"
-        "main Pagos"
-        "main Garantia"
-        "main Reembolso"
-        "main Reseña"
+            "main Preguntas"
+            "main Tiempo"
+            "main Pagos"
+            "main Garantia"
+            "main Reembolso"
+            "main Reseña"
         ;
 
-        p{
+        p {
             display: flex;
             font-size: 20px;
             color: black;
@@ -27,43 +27,41 @@
             font-weight: 300;
         }
 
-        h2{
+        h2 {
             display: flex;
             justify-content: start;
             font-size: 30px;
         }
 
-        .PreguntasFrec{
+        .PreguntasFrec {
             display: flex;
             grid-area: Preguntas;
             margin-top: 20px;
 
-            h1{
+            h1 {
                 background-color: black;
                 border-radius: 5px;
             }
         }
 
-        .Tiempo{
+        .Tiempo {
             grid-area: Tiempo;
         }
 
-        .Pagos{
+        .Pagos {
             grid-area: Pagos;
         }
 
-        .Garantia{
+        .Garantia {
             grid-area: Garantia;
         }
 
-        .Reembolso{
+        .Reembolso {
             grid-area: Reembolso;
         }
 
-        .Reseñas{
+        .Reseñas {
             grid-area: Reseña;
         }
     }
 }
-
-

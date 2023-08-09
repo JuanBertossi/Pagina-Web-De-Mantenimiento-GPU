@@ -1,20 +1,21 @@
-.bodyPERFIL{
+.bodyPERFIL {
     background-color: $colorfondo;
     background-image: $imagenfondo;
     display: grid;
     grid-template-rows: 0.20fr 1fr 0.5fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: $gridareabody;
-    .mainPERFIL{
+
+    .mainPERFIL {
         display: grid;
-        grid-template-rows: 0.20fr 1fr ;
+        grid-template-rows: 0.20fr 1fr;
         grid-template-columns: 0.50fr 1fr;
         grid-template-areas:
-        "main parrafoperfil"
-        "iconoperfil formulario"
+            "main parrafoperfil"
+            "iconoperfil formulario"
         ;
-        
-        .ParrafoPerfil{
+
+        .ParrafoPerfil {
             margin-top: 10px;
             font-family: $fuenteH;
             border-radius: 5px;
@@ -24,21 +25,21 @@
             grid-area: parrafoperfil;
             display: flex;
             background-color: black;
-            width: 600px ;
+            width: 600px;
         }
-        
-        .IconoPerfil{
+
+        .IconoPerfil {
             grid-area: iconoperfil;
             margin-left: 100%;
             margin-top: 20px;
 
-            .PerfilIcono{
+            .PerfilIcono {
                 width: 60px;
                 height: 60px;
             }
         }
 
-        .Formulario{
+        .Formulario {
             display: flex;
             font-size: 30px;
             margin-top: 70px;
@@ -49,12 +50,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-

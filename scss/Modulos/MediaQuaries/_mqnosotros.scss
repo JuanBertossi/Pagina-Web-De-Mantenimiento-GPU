@@ -1,19 +1,21 @@
-@media (max-width: 768px){
-    .bodyNOSOTROS .mainNOSOTROS{
+@media (max-width: 768px) {
+    .bodyNOSOTROS .mainNOSOTROS {
         grid-template-columns: 0.1fr 1fr;
     }
-    .bodyNOSOTROS .mainNOSOTROS .Nosotros h1{
+
+    .bodyNOSOTROS .mainNOSOTROS .Nosotros h1 {
         height: 80px;
     }
 }
 
-@media (max-width: 600px){ 
-    .bodyNOSOTROS .mainNOSOTROS .Nosotros h1{
+@media (max-width: 600px) {
+    .bodyNOSOTROS .mainNOSOTROS .Nosotros h1 {
         height: 60px;
     }
 }
-@media(max-width: 576px){
-    .bodyNOSOTROS .mainNOSOTROS p{
+
+@media(max-width: 576px) {
+    .bodyNOSOTROS .mainNOSOTROS p {
         font-size: 16px;
     }
 }

@@ -1,29 +1,37 @@
-footer{
+footer {
     grid-area: footer;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: end;
     font-size: 20px;
-    margin-top:auto;
+    margin-top: auto;
 
-    .Copyright{
+    .Copyright {
         font-family: $fuenteP;
         display: inline;
         color: black;
         font-size: 16px;
     }
 
-    .CopyrightLogo{
+    .CopyrightLogo {
         width: 25px;
         height: 15px;
     }
 
-    .LogoWhatsapp{
+    .LogoWhatsapp {
         position: fixed;
         bottom: 30px;
         right: 20px;
         width: 50px;
         height: 45px;
+    }
+
+    .LogoInstagram{
+        position: fixed;
+        bottom: 21px;
+        right: 65px;
+        width: 80px;
+        height: 60px;
     }
 }

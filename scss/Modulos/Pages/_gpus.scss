@@ -1,4 +1,4 @@
-.bodyGPUS{
+.bodyGPUS {
     background-color: $colorfondo;
     background-image: $imagenfondo;
     display: grid;
@@ -6,23 +6,23 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: $gridareabody;
 
-    .mainGPUS{
+    .mainGPUS {
         display: grid;
-        grid-template-rows: repeat(8, 1fr) ;
+        grid-template-rows: repeat(8, 1fr);
         grid-template-columns: 0.5fr repeat(2, 1fr);
         grid-template-areas:
-        "ParrafoAMD rx5 rx5"
-        "main rx67 rx67"
-        "main otros otros"
-        "main otros2 otros2"
-        "main rtx12 rtx12"
-        "main rtx34 rtx34"
-        "main otrasNvidia otrasNvidia"
-        "main otrasNvidia2 otrasNvidia2"
-    
+            "ParrafoAMD rx5 rx5"
+            "main rx67 rx67"
+            "main otros otros"
+            "main otros2 otros2"
+            "main rtx12 rtx12"
+            "main rtx34 rtx34"
+            "main otrasNvidia otrasNvidia"
+            "main otrasNvidia2 otrasNvidia2"
+
         ;
 
-        p{
+        p {
             margin-top: 5px;
             font-size: 16px;
             color: black;
@@ -31,7 +31,7 @@
             font-weight: 300;
         }
 
-        .ParrafoGPUS{
+        .ParrafoGPUS {
             display: flex;
             font-family: $fuenteR;
             grid-area: ParrafoAMD;
@@ -41,87 +41,88 @@
             border-radius: 5px;
             height: 200px;
         }
+
         //AMD
-        .RX5{
+        .RX5 {
             @include marginT-displayF-alignC-justSE;
             grid-area: rx5;
 
-            .SeriesRX500{
+            .SeriesRX500 {
                 @include Border-Background;
                 width: 275px;
                 height: 210px;
             }
 
-            .W6600{
+            .W6600 {
                 @include Border-Background;
                 width: 400px;
                 height: 200px;
             }
         }
 
-        .RX67{
+        .RX67 {
             @include marginT-displayF-alignC-justSE;
             grid-area: rx67;
 
-            .SeriesRX6000{
+            .SeriesRX6000 {
                 @include Border-Background;
                 width: 300px;
                 height: 300px;
             }
-            
-            .AMDVII{
+
+            .AMDVII {
                 @include Border-Background;
                 width: 300px;
                 height: 300px;
             }
         }
 
-        .OTRAS{
+        .OTRAS {
             @include marginT-displayF-alignC-justSE;
             grid-area: otros;
 
-            .W7900{
+            .W7900 {
                 @include Border-Background;
                 width: 500px;
                 height: 300px;
             }
-            
-            .SeriesRX7000{
+
+            .SeriesRX7000 {
                 @include Border-Background;
                 width: 500px;
                 height: 300px;
             }
         }
 
-        .OTRAS2{
+        .OTRAS2 {
             @include marginT-displayF-alignC-justSE;
             grid-area: otros2;
 
-            .RX580{
+            .RX580 {
                 @include Border-Background;
                 width: 400px;
                 height: 500px;
             }
-            
-            .SeriesRX5000{
+
+            .SeriesRX5000 {
                 @include Border-Background;
                 width: 400px;
                 height: 400px;
             }
         }
 
-        .RTX12{
+        .RTX12 {
             @include marginT-displayF-alignC-justSE;
             grid-area: rtx12;
 
-            .RTX1000{
+            .RTX1000 {
                 @include Border-Background;
                 width: 400px;
                 height: 250px;
-                
+
             }
 
-            .RTX2000{
+            .RTX2000 {
                 @include Border-Background;
                 width: 400px;
                 height: 300px;
@@ -130,53 +131,53 @@
 
         //NVIDIA
 
-        .RTX34{
+        .RTX34 {
             @include marginT-displayF-alignC-justSE;
             grid-area: rtx34;
 
-            .RTX3000{
+            .RTX3000 {
                 @include Border-Background;
                 width: 450px;
                 height: 250px;
             }
 
-            .RTX4000{
+            .RTX4000 {
                 @include Border-Background;
                 width: 500px;
                 height: 250px;
             }
         }
-        
-        .otrasNvidia{
+
+        .otrasNvidia {
             @include marginT-displayF-alignC-justSE;
             grid-area: otrasNvidia;
 
-            .GTX660{
+            .GTX660 {
                 @include Border-Background;
                 width: 450px;
                 height: 275px;
             }
 
-            .GTX970{
+            .GTX970 {
                 @include Border-Background;
                 width: 420px;
                 height: 300px;
             }
-            
+
         }
 
-        .otrasNvidia2{
+        .otrasNvidia2 {
             @include marginT-displayF-alignC-justSE;
             margin-bottom: 75px;
             grid-area: otrasNvidia2;
 
-            .RTXA4500{
+            .RTXA4500 {
                 @include Border-Background;
                 width: 400px;
                 height: 300px;
             }
 
-            .RTX2080{
+            .RTX2080 {
                 @include Border-Background;
                 width: 400px;
                 height: 300px;
